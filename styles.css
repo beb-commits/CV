@@ -23,8 +23,10 @@ li {
 div {
 	justify-content: center;
 	flex-wrap: wrap;
-	margin: 10px;
-	width: 750px;
+	
+}
+.tidydiv {
+	column-gap: 50px;
 }
 
 @media screen and (max-width: 600px) {
@@ -50,6 +52,7 @@ div {
 	font-size: 20px;
 	padding: 50px;
 	color: yellow;
+	margin: 100px;
 }
 
 .flex-container2 {
@@ -58,15 +61,25 @@ div {
 	flex-direction: column;
 	background-color: lightsalmon;
 	color: darkblue;
-	padding: 50px;
+	padding: 100px;
 	float: center;
+	margin: 100px;
 }
 
-.column {
-	columns: 200px 3;
+.col-4 {
+	
 	flex-wrap: wrap;
 	color: rebeccapurple;
-	font-size: 30px;
+	font-size: 15px;
 	float: center;
 	text-align: left;
+}
+.row {
+	padding: 100px;
+	
+	
+	grid-gap: 50px;
+}
+.container-fluid{
+	float: left;
 }
