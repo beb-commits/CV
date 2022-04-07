@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grades</title>
+</head>
+
+<script>
+    function getGrades() {
+        div = document.getElementById('grade');
+        let subjects = prompt("Please enter the number of subjects you take");{
+            document.getElementById("grade").innerHTML =
+            "the number of subjects is "+ subjects; {
+                for (var i = 1; subjects >= i; i++) {
+                    div.innerHTML+=(" </br> Please enter grade for subject " + i +"  <input type='text'> </br>" )
+
+
+                }
+            }
+        }
+    }   
+    function results() {
+        div = document.getElementById("result");
+        let res = document.getElementsByTagName('input'); {
+        for (i = 0; res.length >= i; i++) {
+            alert("The grade for subject " + (i+1) + " is " + res[i].value);
+        }
+    }
+}
+</script>
+
+<body>
+    <div id="grade">
+        <p>Please click <button onclick="getGrades()">here</button> to enter your grades</p>
+
+    </div>
+    <div id="result">
+        <button type="button" onclick="results()">Submit</button>
+    </div>
+</body>
+
+</html> 
